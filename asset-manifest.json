@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Internship-Inntech/static/css/main.460d7bf1.css",
+    "main.js": "/Internship-Inntech/static/js/main.989bf8ea.js",
+    "static/js/787.6606bfd5.chunk.js": "/Internship-Inntech/static/js/787.6606bfd5.chunk.js",
+    "static/media/VR.jpg": "/Internship-Inntech/static/media/VR.768d0aae1cd22e9aa390.jpg",
+    "static/media/Clipboard.png": "/Internship-Inntech/static/media/Clipboard.26208825544e15bb0c91.png",
+    "static/media/Phone.png": "/Internship-Inntech/static/media/Phone.38130aa41a1ce8b0d4ee.png",
+    "static/media/profile.png": "/Internship-Inntech/static/media/profile.1091e13cdd6a4a7ca464.png",
+    "static/media/Hand.png": "/Internship-Inntech/static/media/Hand.6bd1c6105b65be367ba1.png",
+    "index.html": "/Internship-Inntech/index.html",
+    "main.460d7bf1.css.map": "/Internship-Inntech/static/css/main.460d7bf1.css.map",
+    "main.989bf8ea.js.map": "/Internship-Inntech/static/js/main.989bf8ea.js.map",
+    "787.6606bfd5.chunk.js.map": "/Internship-Inntech/static/js/787.6606bfd5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.460d7bf1.css",
+    "static/js/main.989bf8ea.js"
+  ]
+}
