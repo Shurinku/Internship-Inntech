@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+:root {
+  --main-bg-color: #ff4363;
+  --text-color: #fff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+body {
+  margin: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  position: relative;
+}
+.main {
+  padding-left: 10rem;
+}
+h1 {
+  font-size: 82px;
+  line-height: 98px;
+  color: var(--text-color);
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  font-size: 60px;
+  line-height: 72px;
+
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;
+}
+h3 {
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 600;
+  font-family: "Poppins";
+  text-align: center;
+}
+p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #666;
+}
+ul {
+  list-style: none;
+}
+.override {
+  color: #fff;
+}
+li::before {
+  content: "•";
+  color: var(--main-bg-color);
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 968px) {
+  .image {
+    display: none;
+  }
+}
+.navbar,
+.header {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+.header {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.wave .shape-fill {
+  fill: #ffffff;
+}
+.image {
+  width: 30%;
+  display: block;
+}
+.hamburger {
+  font-size: 30px;
+}
+
+.compass,
+.edit,
+.shield,
+.questionMark {
+  font-size: 24px;
+  border-radius: 50px;
+  padding: 1rem;
+}
+.compass {
+  color: #ff7588;
+  background-color: #fff4f5;
+}
+.edit {
+  background-color: #fff4f5;
+  color: #8977ff;
+}
+
+.shield {
+  background-color: #fff4f5;
+  color: #ffaa8f;
+}
+
+.icons {
+  background-color: #fff4f5;
+  color: #ff7588;
+  font-size: 24px;
+  border-radius: 50px;
+  padding: 1rem;
+  width: 4rem;
+}
+.questionMark {
+  background-color: #fff4f5;
+  color: #ff7588;
+  font-size: 96px;
+  line-height: 96px;
+  color: #ff7588;
+  font-weight: 400;
+  font-family: "Abhaya Libre";
+  text-align: center;
+}
+.question {
+  font-size: 24px;
+  line-height: 29px;
+  color: #ff7588;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+button {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  border: none;
+  font-size: 20px;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.btn-select {
+  background-color: var(--text-color);
+  color: var(--main-bg-color);
+  border-radius: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: var(--text-color);
+  margin-top: 3rem;
+}
+.copyright {
+  padding-left: 10rem;
+}
+
+.stats {
+  background-color: #ff4363;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 3rem;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: "Poppins";
 }
